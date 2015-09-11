@@ -1,0 +1,33 @@
+<!Doctype html>
+<html ng-app="myApp" ng-csp>
+  <head>
+    <meta charset="UTF-8">
+    <title>TreeMark</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/csp.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div ng-view></div>
+    </div>
+    
+    <div id="actionbar">
+      <ul class="list-inline">
+        <li><a class="glyphicon glyphicon-home" href="#/"></a></li>
+        <li><a class="glyphicon glyphicon-cog" href="#/settings"></a></li>
+      </ul>
+    </div>
+
+    <script src="./js/vendor/angular.min.js"></script>
+    <script src="./js/vendor/angular-route.min.js"></script>
+    <script src="./js/vendor/d3.v3.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/bookmarkTree.js"></script>
+    <script src="./js/SettingsCtrl.js"></script>
+    <script src="./js/weatherService.js"></script>
+    <script src="./js/UserService.js"></script>
+
+  </body>
+</html>

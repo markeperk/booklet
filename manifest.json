@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Presently",
+  "description": "A currently clone",
+  "version": "0.1",
+  "permissions": [
+    "http://api.wunderground.com/api/",
+    "http://autocomplete.wunderground.com/api",
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css",
+    "http://localhost:8080/api/*",
+    "bookmarks",
+    "tabs",
+    "unlimitedStorage",
+    "management"
+  ],
+  "background": {
+    "scripts": ["js/vendor/angular.min.js"]
+  },
+  "externally_connectable": {
+    "matches": ["*://*.example.com/*"]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "chrome_url_overrides" : {
+    "newtab": "tab.html"
+  }
+}
